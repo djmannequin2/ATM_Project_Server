@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="55cac253-8e9a-4147-8e51-548877cf2f62" ChangeDateTime="06/23/2022 20:15:07">
+    <Property Name="ElementName" Value="[dbo].[Withdrawal]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[SetBalance]" />
+  </Operation>
+</Operations>
