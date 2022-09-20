@@ -5,21 +5,8 @@ public static class Api
     public static void ConfigureApi(this WebApplication app)
     {
         //All API endpoint mapping
-        app.MapGet(pattern:"/Users", GetUsers);
         app.MapGet(pattern: "/People/{id}", GetBalance);
         app.MapPut(pattern: "/People", SetBalance);
-    }
-
-    private static async Task<IResult> GetUsers(IUserData data)
-    {
-        try
-        {
-            return Results.Ok(await data.GetBalance());
-        }
-        catch (Exception ex)
-        {
-            return Results.Problem(ex.Message);
-        }
     }
 
     private static async Task<IResult> GetBalance(int id, IUserData data)

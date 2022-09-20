@@ -24,4 +24,5 @@ public class UserData : IUserData
     }
 
     public Task SetBalance(UserModel user) => _db.SaveData(storedProcedure: "dbo.SetBalance", user);
+
 }
